@@ -1,0 +1,8 @@
+{
+  "name": "wled",
+  "id": "wled",
+  "keywords": [ "light", "wled" ],
+  "runtime": "node",
+  "type": "ondemand",
+  "entry": "main.js"
+}
