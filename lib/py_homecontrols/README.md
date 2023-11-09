@@ -1,1 +1,0 @@
-The nodejs server will spawn a python script which includes this library, nodejs can read its stdout and gets data that way

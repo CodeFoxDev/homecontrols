@@ -1,9 +1,0 @@
-README.md
-setup.py
-homecontrols/__init__.py
-homecontrols/commands.py
-homecontrols/printstd.py
-homecontrols.egg-info/PKG-INFO
-homecontrols.egg-info/SOURCES.txt
-homecontrols.egg-info/dependency_links.txt
-homecontrols.egg-info/top_level.txt
