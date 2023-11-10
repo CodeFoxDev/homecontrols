@@ -12,7 +12,17 @@ It's very similar to HA integration
 Everything should be sorted into areas, areas indicate a room/section of the home/business, names of devices should be unique per area,
 but multiple areas can contain the same device name.
 
-## Integration architecture
+## Terminology
+
+- Integration
+  - The integration is what makes communication between HC and the device possible
+  - It can be written in JS, Python or c++
+- Service
+  - A service is sort of like a `command` when it's executed something on the device will happen like turning a light on, etc. 
+- Device
+  - The device is a physical device that can be controlled via the integration
+
+## Device architecture
 
 - State
   - Each device has one or more states, be it if a switch is turned on, or something different.
@@ -37,10 +47,12 @@ Create components/widgets with html/jsx state data comes from backend and gets r
   - [ ] UI Library
     - [ ] Components
     - [ ] Docs
-  - [ ] State reflection (reflex device state in ui via websocket)
+  - [ ] State reflection in UI
 - [ ] Backend
   - [ ] Core
     - [ ] Automations
+    - [ ] Authentication
+    - [ ] Areas
   - [ ] Integrations
     - [ ] Native libraries
       - [ ] Events
