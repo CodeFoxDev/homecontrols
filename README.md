@@ -5,7 +5,6 @@ Homecontrols is a general purpose smart home hub
 ## Services
 
 If you want to say toggle a light, you would send an event from the frontend to HC core which calls the appropriate service, which will then handle the request
-It's very similar to HA integration
 
 ## Areas
 
@@ -13,6 +12,7 @@ Everything should be sorted into areas, areas indicate a room/section of the hom
 but multiple areas can contain the same device name.
 
 ## Terminology
+https://www.home-assistant.io/getting-started/concepts-terminology/
 
 - Integration
   - The integration is what makes communication between HC and the device possible
