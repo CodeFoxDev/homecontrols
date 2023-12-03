@@ -18,9 +18,12 @@ https://www.home-assistant.io/getting-started/concepts-terminology/
   - The integration is what makes communication between HC and the device possible
   - It can be written in JS, Python or c++
 - Service
-  - A service is sort of like a `command` when it's executed something on the device will happen like turning a light on, etc. 
+  - A service is a part of homecontrols, like the ui service, notification service, etc.
+  - It can also be a service of a third party, like location service, weather service, etc.
+- Action
+  - An action is sort of like a `command`, when it's executed, something on the device will happen like turning a light on, etc. 
 - Device
-  - The device is a physical device that can be controlled via the integration
+  - The device is a physical device that can be controlled via the integration with its actions
 
 ## Device architecture
 
