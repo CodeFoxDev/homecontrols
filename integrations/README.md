@@ -1,17 +1,17 @@
 # Activities
 
 To define an activity you can use one of the following methods:
-- using function decorators in type script
+- using function decorators in typescript
   ```ts
   import { defineNamespace, defineActivity } from "@homecontrols/core";
 
-  @defineNamespace("light")
+  @entity("light")
   @defineActivity("turn_on")
   function activity_light_on(data) {
     // The Light.turn_on event
   }
   ```
-- using the namespace's class
+- using the entity's class
   ```js
   import { Light } from "@homecontrols/core";
 
