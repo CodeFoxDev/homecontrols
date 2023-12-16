@@ -1,16 +1,4 @@
-import { Component } from "#core/components/index"
-
-function activity(name) {
-  return () => { }
-}
-
-function event(name) {
-  return () => { }
-}
-
-function state() {
-
-}
+import { Component, activity, event, state } from "#core/components/index"
 
 class Switch extends Component {
   constructor() {
@@ -21,7 +9,7 @@ class Switch extends Component {
 
   }
 
-  @state
+  @state()
   is_on() {
 
   }
