@@ -2,7 +2,6 @@ import { stdout } from "process";
 
 const showTimestamps = true;
 const showColors = true;
-const upperCased = true;
 const modifyConsoleLog = true;
 
 const _consoleLog = console.log.bind(console);
@@ -38,11 +37,11 @@ export class Logger {
     const min = t.getMinutes() < 10 ? `0${t.getMinutes()}` : `${t.getMinutes()}`;
     const hour = t.getHours() < 10 ? `0${t.getHours()}` : `${t.getHours()}`;
     if (!showColors) return `${hour}:${min}:${sec}`;
-    return `\x1b[90m${hour}:${min}:${sec}\x1b[0m`;
+    return `\x1b[90m${hour}:${min}:${sec}\x1b[0m `;
   }
   #formatPrefix() {
     if (!showColors) return `[${this.service}]${this.identifier ? `[${this.identifier}]` : ""}`;
-    return ` \x1b[36m[${this.service}]${this.identifier ? `\x1b[90m[${this.identifier}]` : ""}\x1b[0m`;
+    return `\x1b[36m[${this.service}]${this.identifier ? `\x1b[90m[${this.identifier}]` : ""}\x1b[0m`;
   }
   info(...data) {
     this.#write(data, logTypes.info);
@@ -56,6 +55,15 @@ export class Logger {
   }
 }
 
+export class LoggerExternal extends Logger {
+  constructor(identifier) {
+    super();
+    this.service = "integrations";
+    this.identifier = identifier;
+  }
+}
+
+// TODO: overwrite all console logging functions
 (() => {
   if (!modifyConsoleLog) return;
   const _logger = new Logger("custom");

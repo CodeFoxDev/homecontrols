@@ -1,9 +1,0 @@
-{
-  "domain": "light",
-  "name": "Light",
-  "main": "index.js",
-  "version": "1.0.0",
-  "author": "Codefoxdev",
-  "permissions": [],
-  "dependencies": []
-}
