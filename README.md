@@ -49,9 +49,11 @@ All in-file todos are prefixed with `TODO:`
 - Initialize data folder if it doesn't exist
 
 ## Entity ids
+
 Generate a new one on first creation and save it in data folder so it can be retreived when server restarts or something.
 
 ## Directories
+
 - `/src` homecontrols core's source code
   - `/src/components` all the component-related code
     - `/src/components/builtin` first-party components
