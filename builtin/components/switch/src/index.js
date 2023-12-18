@@ -3,10 +3,7 @@ import { Component } from "#src/components/index.js";
 export class Switch extends Component {
   constructor() {
     super();
-
-    this.states.init({
-      is_on: false
-    });
+    this.states.set({ is_on: false });
   }
   turn_on() {
     this.states.set({ is_on: true });

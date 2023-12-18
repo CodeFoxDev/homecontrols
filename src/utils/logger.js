@@ -67,7 +67,7 @@ export class LoggerExternal extends Logger {
 // TODO: overwrite all console logging functions
 (() => {
   if (!modifyConsoleLog) return;
-  const _logger = new Logger("custom");
+  const _logger = new Logger("untracked");
   console.log = (...data) => { _logger.info(...data) }
   console.warn = (...data) => { _logger.warn(...data) }
   console.error = (...data) => { _logger.error(...data) }

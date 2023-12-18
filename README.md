@@ -44,24 +44,12 @@ https://www.home-assistant.io/getting-started/concepts-terminology/
 Create components/widgets with html/jsx state data comes from backend and gets reflected in the frontend via a websocket call (will be handled be HC)
 
 ## TODO
-- [ ] Frontend
-  - [ ] JSX support
-    - [ ] Vite integration?
-  - [ ] UI Library
-    - [ ] Components
-    - [ ] Docs
-  - [ ] State reflection in UI
-- [ ] Backend
-  - [ ] Core
-    - [ ] Automations
-    - [ ] Authentication
-    - [ ] Areas
-  - [ ] Integrations
-    - [ ] Native libraries
-      - [ ] Events
-      - [ ] Services
-      - [ ] State
-    - [ ] Docs  
+
+All in-file todos are prefixed with `TODO:`
+- Initialize data folder if it doesn't exist
+
+## Entity ids
+Generate a new one on first creation and save it in data folder so it can be retreived when server restarts or something.
 
 ## Directories
 - `/src` homecontrols core's source code
