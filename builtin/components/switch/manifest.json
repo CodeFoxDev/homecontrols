@@ -1,0 +1,10 @@
+{
+  "domain": "switch",
+  "name": "Switch",
+  "main": "src/index.js",
+  "types": "src/types/index.d.ts",
+  "version": "1.0.0",
+  "author": "Codefoxdev",
+  "permissions": [],
+  "dependencies": []
+}

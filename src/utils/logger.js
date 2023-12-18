@@ -52,6 +52,7 @@ export class Logger {
   error(...data) {
     // TODO: add stacktrace?
     this.#write(data, logTypes.error);
+    return false; // To be able to do: return logger.error(...);
   }
 }
 
