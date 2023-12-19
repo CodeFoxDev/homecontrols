@@ -14,5 +14,8 @@
   "imports": {
     "#src/*": "./src/*",
     "#builtin/*": "./builtin/*"
+  },
+  "dependencies": {
+    "ws": "^8.15.1"
   }
 }

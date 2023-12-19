@@ -4,7 +4,7 @@ import { genEntityId } from "#src/utils/id.js";
 
 export class Component {
   constructor(data) {
-    console.log(data);
+    //console.log(data);
     this.bus = new ComponentEventBus();
     this.states = new ComponentStateMachine();
   }
