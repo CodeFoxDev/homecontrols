@@ -1,10 +1,11 @@
 import { Component } from "#src/components/index.js";
 
 export class Switch extends Component {
-  constructor() {
-    super();
+  constructor(data) {
+    super(data);
     this.states.set({ is_on: false });
   }
+  // Actions
   turn_on() {
     this.states.set({ is_on: true });
   }
@@ -17,6 +18,6 @@ export class Switch extends Component {
   }
 }
 
-const _switch = new Switch();
+//const _switch = new Switch();
 /* const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(_switch));
 console.log(methods); */

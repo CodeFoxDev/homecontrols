@@ -56,6 +56,6 @@ Generate a new one on first creation and save it in data folder so it can be ret
 
 - `/src` homecontrols core's source code
   - `/src/components` all the component-related code
-    - `/src/components/builtin` first-party components
   - `/src/types` all the typings
+ - `/builtin` first-party components part of the core system
 - `/data` where all the third-party integrations, services, configs, etc. will be stored

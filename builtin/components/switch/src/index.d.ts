@@ -1,12 +1,6 @@
-import { ComponentEventBus } from "#src/events";
-import { ComponentStateMachine } from "#src/states";
+import { Component } from "#src/types";
 
-export class Switch {
-  constructor(): void;
-
-  states: ComponentStateMachine;
-  bus: ComponentEventBus;
-
+export class Switch extends Component {
   /**
    * Turns the light on
    */
