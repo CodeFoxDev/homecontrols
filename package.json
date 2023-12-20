@@ -16,6 +16,7 @@
     "#builtin/*": "./builtin/*"
   },
   "dependencies": {
+    "fastify": "^4.25.1",
     "ws": "^8.15.1"
   }
 }

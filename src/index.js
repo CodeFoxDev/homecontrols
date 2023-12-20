@@ -2,6 +2,8 @@
 import { load, env } from "./utils/env.js";
 load();
 
+import "./api/index.js";
+
 import { Logger } from "./utils/logger.js";
 import { Light } from "../builtin/components/light/src/index.js";
 
