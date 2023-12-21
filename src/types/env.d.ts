@@ -1,4 +1,4 @@
-interface envEntries {
+export interface entries {
   PROD: boolean;
   PORT: number;
   HOST: string;
@@ -11,8 +11,8 @@ interface envParseOptions {
   parseInt: boolean;
 }
 
-export function load(options?: envParseOptions): envEntries;
-export function parse(env: string, options?: envParseOptions): envEntries;
+export function load(options?: envParseOptions): entries;
+export function parse(env: string, options?: envParseOptions): entries;
 
-export const env: envEntries;
+export const env: entries;
 export default env;

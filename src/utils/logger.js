@@ -13,6 +13,10 @@ const logTypes = {
 }
 
 export class Logger {
+  /**
+   * @param {string} service Base service, e.g. "core" / "plugin"
+   * @param {string} identifier Identifier for the subpart of the service, e.g. "wled" (with server: "plugin")
+   */
   constructor(service, identifier) {
     this.service = service;
     this.identifier = identifier;
@@ -30,6 +34,7 @@ export class Logger {
     }
     stdout.write(" ");
     _consoleLog(...data);
+    stdout.write("\x1b[0m");
   }
   #formatTimeStamp() {
     const t = new Date();

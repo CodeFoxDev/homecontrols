@@ -1,5 +1,5 @@
-/* import { app } from "./server.js";
+import { app } from "./server.js";
 
-app.get("/", (res, req) => {
-  res.end("Hello, world");
-}) */
+app.get("/api", (req, res) => {
+  res.send("hello, world");
+})

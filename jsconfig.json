@@ -9,8 +9,15 @@
       ],
       "#builtin/*": [
         "builtin/*"
+      ],
+      "types/*": [
+        "./src/types/*.d.ts"
+      ],
+      "*": [
+        "./src/types/*.d.ts"
       ]
     },
+    "allowJs": true,
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "esModuleInterop": true
