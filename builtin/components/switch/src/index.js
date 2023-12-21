@@ -1,4 +1,4 @@
-import { Component } from "#src/components/index.js";
+import { Component } from "api/components/index.js";
 
 export class Switch extends Component {
   constructor(data) {

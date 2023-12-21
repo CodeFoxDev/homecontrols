@@ -1,4 +1,4 @@
-import { Component } from "#src/types";
+import { Component } from "api/types";
 
 export class Switch extends Component {
   /**

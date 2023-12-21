@@ -1,15 +1,17 @@
-import { env } from "#src/utils/env.js";
-import { Logger } from "#src/utils/logger.js";
-import { createServer } from "http";
+import { env } from "#api/lib/utils/env.js";
+import { Logger } from "#api/lib/utils/logger.js";
 import { WebSocketServer } from "ws";
 import express from "express";
+
+import { ssr } from "./ssr.js";
 
 const logger = new Logger("core", "server");
 const wsLogger = new Logger("core", "websocket");
 
 export const app = express();
+app.use(await ssr());
 const server = app.listen(env.PORT, () => {
-  logger.info(`Server listening on port: ${env.PORT}`);
+  logger.info(`Server listening on: http://localhost:${env.PORT}`);
 });
 
 export const wss = new WebSocketServer({ noServer: true });
@@ -30,3 +32,7 @@ server.on("upgrade", (req, socket, head) => {
     socket.destroy();
   }
 });
+
+app.get("*", (req, res, next) => {
+
+})

@@ -1,5 +1,5 @@
-import { ComponentEventBus } from "#src/events";
-import { ComponentStateMachine } from "#src/states";
+import { ComponentEventBus } from "api/events";
+import { ComponentStateMachine } from "api/states";
 
 export class Component {
   constructor(data): void;
