@@ -2,7 +2,7 @@ import { stdout } from "process";
 
 const showTimestamps = true;
 const showColors = true;
-const modifyConsoleLog = true;
+const modifyConsoleLog = false;
 
 const _consoleLog = console.log.bind(console);
 

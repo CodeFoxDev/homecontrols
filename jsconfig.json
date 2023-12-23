@@ -20,6 +20,7 @@
     "allowJs": true,
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "preserve"
   }
 }

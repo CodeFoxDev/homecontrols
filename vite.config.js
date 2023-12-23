@@ -17,11 +17,6 @@ export default defineConfig({
       "#src": path.resolve("src")
     },
   },
-  esbuild: {
-    jsxFactory: 'h',
-    jsxFragment: 'Fragment',
-    jsxInject: 'import { h, Fragment } from "@honeyjs/dom/jsx-runtime"'
-  },
   plugins: [
     xite(),
     inspect(),

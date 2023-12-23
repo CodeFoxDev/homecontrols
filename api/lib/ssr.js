@@ -1,4 +1,6 @@
 import { cwd } from "node:process";
+import { join } from "node:path";
+
 import { env } from "#api/lib/utils/env.js";
 
 /**
