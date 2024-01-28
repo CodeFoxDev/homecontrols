@@ -33,6 +33,4 @@ server.on("upgrade", (req, socket, head) => {
   }
 });
 
-app.get("*", (req, res, next) => {
-
-})
+app.get("*", (req, res, next) => {});

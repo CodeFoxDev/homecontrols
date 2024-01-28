@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "api",
+    // Dist
+    "outDir": "dist",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noEmit": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    // Imports
+    "paths": {
+      "#api/*": [
+        "../api/*"
+      ],
+      "#builtin/*": [
+        "../builtin/*"
+      ]
+    },
+    // JSX
+    "jsx": "preserve"
+  },
+  "include": [
+    "api"
+  ]
+}

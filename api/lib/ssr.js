@@ -1,7 +1,7 @@
-import { cwd } from "node:process";
-import { join } from "node:path";
+import { cwd } from 'node:process';
+import { join } from 'node:path';
 
-import { env } from "#api/lib/utils/env.js";
+import { env } from '#api/lib/utils/env.js';
 
 /**
  * @returns {Promise<(
@@ -13,16 +13,14 @@ import { env } from "#api/lib/utils/env.js";
 export async function ssr() {
   if (env.PROD == true) {
     // handle production assets
-    return (req, res, next) => {
-
-    }
+    return (req, res, next) => {};
   } else {
-    const vite = await import("vite");
+    const vite = await import('vite');
     const server = await vite.createServer({
       server: {
         middlewareMode: true
       },
-      configFile: join(cwd(), "vite.config.js")
+      configFile: join(cwd(), 'vite.config.js')
     });
 
     return server.middlewares;

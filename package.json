@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "api/index.js",
+  "main": "api/index.ts",
   "scripts": {
+    "build": "rimraf dist && rollup -c",
     "dev": "nodemon ."
   },
   "keywords": [],
@@ -21,7 +22,12 @@
   },
   "devDependencies": {
     "@honeyjs/vite-loader": "^0.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@rollup/rollup-win32-x64-msvc": "^4.9.3",
+    "@types/node": "^20.10.5",
+    "nite": "link:../../lib/nite",
     "nodemon": "^3.0.2",
+    "rollup": "^4.9.1",
     "vite": "^5.0.10",
     "vite-plugin-inspect": "^0.8.1",
     "xite": "link:../../lib/xite"

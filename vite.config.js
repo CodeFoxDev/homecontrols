@@ -15,14 +15,14 @@ export default defineConfig({
   resolve: {
     alias: {
       "#src": path.resolve("src")
-    },
+    }
   },
   plugins: [
     xite(),
     inspect(),
     loader({
-      effect: "import { createEffect } from '@honeyjs/dom'",
-    }),
+      effect: "import { createEffect } from '@honeyjs/dom'"
+    })
   ],
   server: {
     host: true
